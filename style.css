@@ -1,0 +1,386 @@
+/*! Basico */
+body {
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: "Helvetica";
+	font-size: 16px;
+	background: url("images/background.png") repeat;
+	background-color: #505252;
+	-webkit-touch-callout: none;
+
+	-webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+}
+
+img {
+	border: none
+}
+
+a {
+	color: #000;
+}
+
+* {
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+/*! Formulario */
+input, textarea {
+	float: left;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	height: 26px;
+	box-sizing: border-box;
+	outline: 0;
+	-webkit-user-select: text;
+	box-shadow: none;
+	margin-bottom: 8px;
+	padding: 6px 8px;
+	font-size: 14px
+}
+
+input:focus, textarea:focus {
+	border-color: #3d9fc8
+}
+
+textarea {
+	height: 104px;
+	max-height: 104px;
+	min-height: 104px
+}
+
+input, textarea, button {
+	border: #000 solid 2px;
+	border-radius: 6px
+}
+
+button {
+	padding: 2px 4px;
+	font-size: 16px;
+	background-color: #dadad8;
+	font-weight: bold
+}
+
+label {
+	float: left;
+	width: 100%;
+	font-weight: bold;
+	padding-bottom: 5px
+}
+
+form {
+	width: 100%;
+	margin: 10px auto
+}
+
+/*! Barra */
+#barra-elemento {
+	box-sizing: border-box;
+	background-image: linear-gradient(180deg, #3d4c5b, #1e252d);
+	background-color: #3d4c5b
+}
+
+#barra-elemento:hover {
+	background-image: linear-gradient(180deg, #172635, #2e4c6a);
+	background-color: #172635
+}
+
+#barra-elemento.pulsado, #barra-elemento.pulsado:hover {
+	background-image: linear-gradient(180deg, #37728b, #214553);
+	background-color: #37728b
+}
+
+/*! Cuerpo */
+#cuerpo {
+	overflow: hidden;
+	box-sizing: border-box;
+	background-image: linear-gradient(180deg, #eeeeee, #cdcdcb);
+	background-color: #eeeeee;
+	border: 2px solid #000;
+	position: relative;
+	box-shadow: 0 0 0 2px #ababab;
+	border-radius: 10px
+}
+
+/*! Texto */
+h1,h2 {
+	font-weight: bold;
+	border-bottom: #000 solid 2px;
+	text-align: left;
+	font-size: 20px;
+	padding-bottom: 6px;
+	margin-top: 0
+}
+
+h1.menu {
+	text-align: center
+}
+
+h2 {
+	padding-bottom: 0;
+	margin-bottom: 10px;
+	font-size: 18px
+}
+
+h3 {
+	font-weight: normal;
+	line-height: 26px;
+	font-size: 16px;
+	margin-top: -12px;
+	padding: 0;
+	text-align: left
+}
+
+/*! Botones */
+#boton {
+	float: left;
+	width: 46%;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin: 4px 2%;
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: #000 0 -1px 0;
+	border-radius: 6px;
+	padding: 10px 20px
+	}
+
+#boton.verde {
+	box-shadow: inset #bbd682 0 0 0 1px,rgba(0,0,0,0.5) 0 0 4px;
+	border: #4e8008 solid 1px;
+	background-image: linear-gradient(180deg, #81b119, #628713);
+	background-color: #81b119
+}
+
+#boton.verde:hover {
+	background-image: linear-gradient(180deg, #628713, #81b119);
+	background-color: #628713
+}
+
+#boton.naranja {
+	box-shadow: inset #f6b082 0 0 0 1px,rgba(0,0,0,0.5) 0 0 4px;
+	border: #ac810b solid 1px;
+	background-image: linear-gradient(180deg, #ea5d00, #b84a00);
+	background-color: #ea5d00
+}
+
+#boton.naranja:hover {
+	background-image: linear-gradient(180deg, #b84a00, #ea5d00);
+	background-color: #b84a00
+}
+
+/*! Boton negro */
+#botonbarra {
+	float: left;
+	text-decoration: none;
+	font-weight: bold;
+	border: #000 solid 2px;
+	border-radius: 6px;
+	padding: 2px 4px;
+	position: absolute;
+	margin-top: -3px
+}
+
+#botonbarra:hover, button:hover {
+	background-color: #000;
+	color: #fff
+}
+
+/*! Columnas */
+#estructuracolumnas{
+	width: 100%;
+	text-align: center;
+	overflow: hidden
+}
+
+#columna {
+	float: left;
+	width: 48%;
+	text-align: center;
+	margin-bottom: 10px
+}
+
+#columna.dos {
+	float: right
+}
+
+/*! Imagen */
+#cuadro {
+	width: 90%;
+	border: #fff solid 6px;
+	box-shadow: rgba(0,0,0,0.5) 0 0 4px;
+	color: #fff
+}
+
+/*! Ocultar */
+#ventanaemergentedisenos, #ventanaemergentepaginasweb, #ventanaemergentecontacto {
+	display: none
+}
+
+
+@media (min-width: 768px) {
+
+	/*! Logo */
+	#logo {
+		z-index: 1;
+		position: relative;
+		width: 210px;
+		height: 60px;
+		top: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border: 1px solid #000;
+		background: rgba(255,255,255,0.5);
+		box-shadow: rgba(0,0,0,0.6) 0 1px 2px;
+		margin-left: auto;
+		margin-right: auto
+	}
+
+	#logo img {
+		position: relative;
+		width: 200px;
+		margin-left: 5px;
+		margin-top: -3px
+	}
+
+	/*! Barra */
+	#barra {
+		z-index: 2;
+		position: relative;
+		width: 325px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 84px;
+		left: 21px
+	}
+
+	#barra-elemento {
+		float: left;
+		position: relative;
+		width: auto;
+		height: 50px;
+		margin-top: 6px;
+		padding: 0 13px;
+		box-shadow: rgba(0,0,0,0.6) 0 1px 2px,inset #fff 0 0 1px;
+		border: #000 solid 1px;
+		border-right: 0
+	}
+
+	#barra-elemento.primero {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px
+	}
+
+	#barra-elemento.ultimo {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border-right: #000 solid 1px
+	}
+
+	#barra-elemento img {
+		float: left;
+		width: 30px;
+		margin-top: 9px;
+	}
+
+	#barra-elemento.primero img {
+		padding-right: 0
+	}
+
+	/*! Cuerpo */
+	#cuerpo {
+		width: 524px;
+		top: -16px;
+		margin: 4px auto 0px;
+		padding: 10px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	/*! Logo */
+	#logo {
+		display: none
+	}
+
+	/*! Botones */
+	#barra{
+		z-index: 2;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0
+	}
+
+	#barra-elemento {
+		position: relative;
+		float: left;
+		width: 20%;
+		height: 44px;
+		box-shadow: rgba(0,0,0,0.6) 0 1px 2px,inset #fff 0 0 1px,inset #000 -1px 0;
+		text-align: center;
+		border-bottom: #000 solid 1px;
+		border-top: #000 solid 1px
+	}
+
+	#barra-elemento img {
+		width: 30px;
+		margin-top: 6px
+	}
+
+	/*! Cuerpo */
+	#cuerpo {
+		z-index: 1;
+		width: auto;
+		display: inline-block;
+		margin: 60px 6px 10px;
+		padding: 6px;
+	}
+
+	/*! Texto */
+	h1,h2 {
+		font-size: 18px;
+		margin-top: 4px
+	}
+
+	h1.menu {
+		text-align: center
+	}
+
+	h2 {
+		margin-bottom: 15px;
+		font-size: 16px
+	}
+
+	h3 {
+		line-height: 22px;
+		font-size: 14px
+	}
+
+	/*! Botones */
+	#boton {
+		float: none;
+		width: auto;
+		margin: 4px
+	}
+
+	/*! Boton negro */
+	#botonbarra {
+		margin-top: 0
+	}
+
+	/*! Columnas */
+	#columna {
+		width: 100%
+	}
+
+}
