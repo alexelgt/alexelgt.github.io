@@ -3,7 +3,7 @@ $aviso = "";
 // check form  
 if ($_POST['email'] != "") {
 	// email de destino
-	$email = "contact@alexelgt.com";
+	$email = "nope@nope.com";
 	
 	// asunto del email
 	$subject = "Contact";
